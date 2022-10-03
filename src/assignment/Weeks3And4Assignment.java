@@ -78,6 +78,7 @@ public class Weeks3And4Assignment {
 		}
 		System.out.println(sumOfElements);				
 		
+		
 	} 	// !!!!!!!!!!MAIN METHOD CLOSING CURLY BRACKET!!!!!!!!!!!!!!!!!
 	
 	
