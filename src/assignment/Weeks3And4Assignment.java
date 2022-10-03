@@ -20,11 +20,11 @@ public class Weeks3And4Assignment {
 		System.out.println("The last age minus the first age of the new array is " + lastMinusFirst);
 		
 		// c. Use a loop to iterate through the array and calculate the average age. Print the result to the console.
-		double averageAge = 0;
+		double sumOfAllAges = 0;
 		for (int age : ages) {
-			averageAge += age;
+			sumOfAllAges += age;
 		}
-		double average = averageAge / ages.length;
+		double average = sumOfAllAges / ages.length;
 		System.out.printf("The average age of the new array is " + "%.2f%n",average);
 		
 		
@@ -64,11 +64,11 @@ public class Weeks3And4Assignment {
 		/* 5. Create a new array of int called nameLengths. Write a loop to iterate over the previously created names array and add the length
 		 * 	  of each name to the nameLengths array.
 		 */
-		int sumOfNamesLengths = 0;
+		int sumOfNameLengths = 0;
 		for (String name : names) {
-			sumOfNamesLengths += name.length();
+			sumOfNameLengths += name.length();
 		}
-		int[] nameLengths = new int[sumOfNamesLengths];
+		int[] nameLengths = new int [6];
 		
 		
 		//6. Write a loop to iterate over the nameLengths array and calculate the sum of all the elements in the array. Print the result to the console.
@@ -76,9 +76,7 @@ public class Weeks3And4Assignment {
 		for (int element : nameLengths) {
 			sumOfElements += element;
 		}
-		System.out.println(sumOfElements);
-		
-				
+		System.out.println(sumOfElements);				
 		
 	} 	// !!!!!!!!!!MAIN METHOD CLOSING CURLY BRACKET!!!!!!!!!!!!!!!!!
 	
@@ -165,7 +163,7 @@ public class Weeks3And4Assignment {
 	 * 	main method on question 1b to add a new age to my array.
 	 */	
 	public static int[] addNewAge (int arrayLength, int oldArray[], int newAge) { 
-		 int newArray[] = new int[arrayLength + 1];
+		 int[] newArray = new int[arrayLength + 1];
 		 for (int i = 0; i < arrayLength; i++) {
 			 newArray[i] = oldArray[i];
 		 }
