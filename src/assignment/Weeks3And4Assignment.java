@@ -64,11 +64,15 @@ public class Weeks3And4Assignment {
 		/* 5. Create a new array of int called nameLengths. Write a loop to iterate over the previously created names array and add the length
 		 * 	  of each name to the nameLengths array.
 		 */
-		int sumOfNameLengths = 0;
-		for (String name : names) {
-			sumOfNameLengths += name.length();
+		int[] nameLengths = new int [names.length];
+	
+		for (int i = 0; i < names.length; i++) {
+			nameLengths[i] = names[i].length();
 		}
-		int[] nameLengths = new int [6];
+		for (int x : nameLengths) {
+			System.out.println(x);
+		}
+		
 		
 		
 		//6. Write a loop to iterate over the nameLengths array and calculate the sum of all the elements in the array. Print the result to the console.
